@@ -8,7 +8,7 @@
 
 > 🤖 **Automate media generations with AI coding agents:** [Generative-Media-Skills](https://github.com/SamurAIGPT/Generative-Media-Skills) — a library of skills that let agents like **Claude Code**, **Codex**, and other coding assistants drive 200+ image/video models end-to-end (prompt → generate → edit → stitch) directly from your terminal. Perfect for building automated media pipelines without touching a UI.
 
-> 🍌 **Claude Fable 5 use cases + 20% off on MuAPI:** [awesome-claude-fable-5](https://github.com/Anil-matcha/awesome-claude-fable-5) — 60 curated real-world use cases, prompts, and benchmarks for Claude Fable 5, with **20% off Fable 5 access** via [MuAPI](https://muapi.ai/pricing).
+> 🍌 **Claude Fable 5 use cases + 20% off on MuAPI:** [awesome-claude-fable-5](https://github.com/Anil-matcha/awesome-claude-fable-5) — 60 curated real-world use cases, prompts, and benchmarks for Claude Fable 5, with **20% off Fable 5 access** via [MuAPI](https://muapi.ai/pricing?utm_source=github&utm_medium=readme&utm_campaign=open-generative-ai).
 
 <p align="center">
   <a href="https://github.com/Anil-matcha/awesome-generative-ai-apps">
@@ -34,7 +34,7 @@
 
 ## 🌐 Try it Online — No Install Required
 
-**Hosted version:** [https://muapi.ai/open-generative-ai](https://muapi.ai/open-generative-ai)
+**Hosted version:** [https://muapi.ai/open-generative-ai?utm_source=github&utm_medium=readme&utm_campaign=open-generative-ai](https://muapi.ai/open-generative-ai?utm_source=github&utm_medium=readme&utm_campaign=open-generative-ai)
 
 Use all studios (Image, Video, Audio, AI Clipping, Vibe Motion, Lip Sync, Cinema, Marketing, Workflows, Agents, Design Agent, Apps, MCP & CLI) directly in your browser — no Node.js, no setup. Sign up for a free account to start generating. The hosted version is always up to date with the latest models.
 
@@ -129,7 +129,7 @@ echo 'kernel.apparmor_restrict_unprivileged_userns=0' | sudo tee /etc/sysctl.d/9
 
 ---
 
-Open Generative AI is a free, open-source AI image, video, cinema, and lip sync studio that brings creative workflows to everyone. No content filters, no prompt rejections, no guardrails — just full creative freedom. Powered by [Muapi.ai](https://muapi.ai), it supports text-to-image, image-to-image, text-to-video, image-to-video, and audio-driven lip sync generation across models like Flux, Nano Banana, Midjourney, Kling, Sora, Veo, Seedream, Infinite Talk, LTX Lipsync, Wan 2.2, and more — all from a sleek, modern interface you can self-host and customize.
+Open Generative AI is a free, open-source AI image, video, cinema, and lip sync studio that brings creative workflows to everyone. No content filters, no prompt rejections, no guardrails — just full creative freedom. Powered by [Muapi.ai](https://muapi.ai?utm_source=github&utm_medium=readme&utm_campaign=open-generative-ai), it supports text-to-image, image-to-image, text-to-video, image-to-video, and audio-driven lip sync generation across models like Flux, Nano Banana, Midjourney, Kling, Sora, Veo, Seedream, Infinite Talk, LTX Lipsync, Wan 2.2, and more — all from a sleek, modern interface you can self-host and customize.
 
 **Why Open Generative AI instead of other AI Video Platforms?**
 - **No filters** — no content filters, no nanny guardrails, no prompt rejections
@@ -411,7 +411,7 @@ Every image you upload is saved locally (URL + thumbnail) so you never upload th
 ### Prerequisites
 
 - [Node.js](https://nodejs.org/) (v18+)
-- A [Muapi.ai access key](https://muapi.ai/access-keys). Copy the generated key value into the app; do not enter the key name or label.
+- A [Muapi.ai access key](https://muapi.ai/access-keys?utm_source=github&utm_medium=readme&utm_campaign=open-generative-ai). Copy the generated key value into the app; do not enter the key name or label.
 
 ### Setup
 
@@ -502,11 +502,11 @@ Open-Generative-AI/
 └── package.json                # workspaces: ["packages/studio"]
 ```
 
-The `packages/studio` library is also consumed by the hosted version on [muapi.ai](https://muapi.ai) — model updates made in `packages/studio/src/models.js` apply to both the self-hosted app and the hosted version automatically.
+The `packages/studio` library is also consumed by the hosted version on [muapi.ai](https://muapi.ai?utm_source=github&utm_medium=readme&utm_campaign=open-generative-ai) — model updates made in `packages/studio/src/models.js` apply to both the self-hosted app and the hosted version automatically.
 
 ## 🔌 API Integration
 
-The app communicates with [Muapi.ai](https://muapi.ai) using a two-step pattern:
+The app communicates with [Muapi.ai](https://muapi.ai?utm_source=github&utm_medium=readme&utm_campaign=open-generative-ai) using a two-step pattern:
 
 1. **Submit** — `POST /api/v1/{model-endpoint}` with prompt and parameters
 2. **Poll** — `GET /api/v1/predictions/{request_id}/result` until status is `completed`
@@ -547,7 +547,7 @@ Lip sync jobs use the same two-step pattern: a dedicated `processLipSync()` meth
 | **Models** | Proprietary | 200+ open & commercial models |
 | **Multi-image input** | Limited | Up to 14 images per request |
 | **Lip sync** | No | 9 models, image & video modes |
-| **Hosted version** | Subscription | Free at [muapi.ai/open-generative-ai](https://muapi.ai/open-generative-ai) |
+| **Hosted version** | Subscription | Free at [muapi.ai/open-generative-ai](https://muapi.ai/open-generative-ai?utm_source=github&utm_medium=readme&utm_campaign=open-generative-ai) |
 | **Self-hosting** | No | Yes |
 | **Customizable** | No | Fully hackable |
 | **Data privacy** | Cloud-based | Your data stays local |
@@ -559,7 +559,7 @@ MIT
 
 ## 🙏 Credits
 
-Built with [Muapi.ai](https://muapi.ai) — the unified API for AI image and video generation models.
+Built with [Muapi.ai](https://muapi.ai?utm_source=github&utm_medium=readme&utm_campaign=open-generative-ai) — the unified API for AI image and video generation models.
 
 ---
 **Deep Dive**: For more details on the "AI Influencer" engine, upcoming "Popcorn" storyboarding features, and the future of this project, read the [full technical overview](https://medium.com/@anilmatcha/).
